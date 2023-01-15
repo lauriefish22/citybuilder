@@ -1,39 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <!-- metadata -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-<head>
-    <!-- metadata -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <!-- title and favicon -->
+        <title>Web App</title>
+        <link rel="icon" type="image/x-icon" href="assets/alchemy-favicon.png" />
 
-    <!-- title and favicon -->
-    <title>Web App</title>
-    <link rel="icon" type="image/x-icon" href="assets/alchemy-favicon.png" />
+        <!-- js -->
+        <script type="module" src="app.js"></script>
 
-    <!-- js -->
-    <script type="module" src="app.js"></script>
+        <!-- fonts -->
+        <!-- see https://fonts.google.com/ -->
 
-    <!-- fonts -->
-    <!-- see https://fonts.google.com/ -->
+        <!-- css -->
+        <link rel="stylesheet" href="styles/reset.css" />
+        <link rel="stylesheet" href="styles/global.css" />
+        <!-- add link for page specific css -->
+    </head>
 
-    <!-- css -->
-    <link rel="stylesheet" href="styles/reset.css" />
-    <link rel="stylesheet" href="styles/global.css" />
-    <!-- add link for page specific css -->
+    <body>
+        <header>
+            <img class="logo" src="assets/html_css_js.png" alt="logo" />
+            <h1>Web App</h1>
+        </header>
 
-</head>
-
-<body>
-    <header>
-        <img class="logo" src="assets/html_css_js.png" alt="logo">
-        <h1>Web App</h1>
-    </header>
-
-    <main>
-
-    </main>
-
-</body>
-
+        <main>
+            <h1>WHAT ARE YOU HUNGRY FOR?</h1>
+            <section>
+                <img id="italian-img"/>
+            </section>
+            <section class="dropdown" id="dropdown">
+                <div 
+                    <label for="italian">Italian</label>
+                    <select class="italian-dd" id="italian-dd">
+                        <option value="lasagna">Lasagna</option>
+                        <option value="ravioli">Ravioli</option>
+                        <option value="spaghetti">Spaghetti</option>
+                        
+                    </select>
+                    
+                </div>
+                <div class="mexican-dropdown" id="mexican-dropdown">
+                    <label for="mexican">Mexican</label>
+                    <select class="mexican" id="mexican">
+                        <option value="tacos">Tacos</option>
+                        <option value="chips">Chips</option>
+                        <option value="burrito">Burrito</option>
+                    </select>
+                </div>
+                <div class="chinese-dropdown" id="chinese dropdown">
+                    <label for="chinese">Chinese</label>
+                    <select class="chinese" id="chinese">
+                        <option value="chow-mein">Chow Mein</option>
+                        <option value="egg-rolls">Egg Rolls</option>
+                        <option value="fortune=cookie">Fortune Cookie</option>
+                    </select>
+                <div class="entry-section" >
+                    <h2>What is your favorite?</h2>
+                    <input id="text-box"> 
+                    <button id="my-button">Submit</button>
+                </input>
+                </div>
+                </div>
+            </section>
+        </main>
+    </body>
 </html>

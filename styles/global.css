@@ -33,3 +33,9 @@ header .logo {
 main {
     padding: 20px;
 }
+.dropdown {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    margin-top: 70px;
+}
