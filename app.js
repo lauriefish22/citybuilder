@@ -9,7 +9,8 @@ const italianImage = document.getElementById('italian-img');
 
 /* Events */
 italianDropdown.addEventListener('change', () => {
-    italianImage.src = `assets/Italian-${italianDropdown.value}.jpg`;
+    console.log(italianDropdown.value);
+    italianImage.src = `assets/Italian-${italianDropdown.value}.png`;
 });
 
 buttonEl.addEventListener('click', () => {});
@@ -19,3 +20,4 @@ inputEl.value = '';
 /* Display Functions */
 
 // (don't forget to call any display functions you want to run on page load!)
+//`assets/Italian-${italianDropdown.value}.png`;
