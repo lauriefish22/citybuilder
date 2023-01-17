@@ -1,39 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <!-- metadata -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-<head>
-    <!-- metadata -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <!-- title and favicon -->
+        <title>Web App</title>
+        <link rel="icon" type="image/x-icon" href="assets/alchemy-favicon.png" />
 
-    <!-- title and favicon -->
-    <title>Web App</title>
-    <link rel="icon" type="image/x-icon" href="assets/alchemy-favicon.png" />
+        <!-- js -->
+        <script type="module" src="app.js"></script>
 
-    <!-- js -->
-    <script type="module" src="app.js"></script>
+        <!-- fonts -->
+        <!-- see https://fonts.google.com/ -->
 
-    <!-- fonts -->
-    <!-- see https://fonts.google.com/ -->
+        <!-- css -->
+        <link rel="stylesheet" href="styles/reset.css" />
+        <link rel="stylesheet" href="styles/global.css" />
+        <!-- add link for page specific css -->
+    </head>
 
-    <!-- css -->
-    <link rel="stylesheet" href="styles/reset.css" />
-    <link rel="stylesheet" href="styles/global.css" />
-    <!-- add link for page specific css -->
+    <body>
+        <header>
+            <img class="logo" src="assets/html_css_js.png" alt="logo" />
+            <h1>Web App</h1>
+        </header>
 
-</head>
-
-<body>
-    <header>
-        <img class="logo" src="assets/html_css_js.png" alt="logo">
-        <h1>Web App</h1>
-    </header>
-
-    <main>
-
-    </main>
-
-</body>
-
+        <main>
+            <h1>WHAT ARE YOU HUNGRY FOR?</h1>
+            <section class="images">
+                <img id="italian-img"/>
+                <img id="mexican-img"/>
+                <img id="chinese-img"/>
+            </section>
+            
+                <div class="dropdown" id="italian-dropdown">
+                    <label for="italian">Italian</label>
+                    <select class="dd" id="italian-dd">
+                        <option value="">Select an entree</option>
+                        <option value="lasagna3">Lasagna</option>
+                        <option value="ravioli">Ravioli</option>
+                        <option value="spag">Spaghetti</option>
+                    </select>
+                        <div>
+                            You changed italian <span id="italian-count">0</span> times
+                        </div>
+                </div>
+                <div class="dropdown" id="mexican-dropdown">
+                    <label for="mexican">Mexican</label>
+                    <select class="dd" id="mexican-dd">
+                        <option value="">Select an entree</option>
+                        <option value="tacos">Tacos</option>
+                        <option value="chips">Chips</option>
+                        <option value="burrito">Burrito</option>
+                    </select>
+                    <div>
+                        You changed mexican <span id="mexican-count">0</span> times
+                    </div>
+                </div>
+                <div class="dropdown" id="chinese dropdown">
+                    <label for="chinese">Chinese</label>
+                    <select class="dd" id="chinese-dd">
+                        <option value="">Select an entree</option>
+                        <option value="chow">Chow Mein</option>
+                        <option value="egg">Egg Rolls</option>
+                        <option value="fortune">Fortune Cookie</option>
+                    </select>
+                    <div>
+                        You changed chinese <span id="chinese-count">0</span> times
+                    </div>
+                </div>
+                <div class="entry-section" >
+                    <h2>What is your favorite?</h2>
+                    <input id="text"> 
+                    <button id="my-button">Submit</button>
+                </input>
+                </div>
+                
+            </section>
+        </main>
+    </body>
 </html>
