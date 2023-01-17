@@ -39,3 +39,6 @@ main {
     justify-content: space-around;
     margin-top: 70px;
 }
+.images {
+    size: 200px;
+}
