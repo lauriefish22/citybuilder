@@ -40,4 +40,6 @@ main {
     margin-top: 70px;
 }
 .images {
+    max-width: fit-content;
+    max-height: fit-content;
 }
