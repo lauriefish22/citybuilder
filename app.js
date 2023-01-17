@@ -48,6 +48,7 @@ buttonEl.addEventListener('click', () => {
     text.push(inputEl.value);
 
     const newElement = document.createElement('p');
+
     newElement.classList.add('text');
     newElement.textContent = inputEl.value;
 
