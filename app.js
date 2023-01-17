@@ -2,15 +2,21 @@
 
 /* Get DOM Elements */
 const italianDropdown = document.getElementById('italian-dd');
+const mexicanDropdown = document.getElementById('mexican-dd');
 const inputEl = document.getElementById('text-box');
 const buttonEl = document.getElementById('my-button');
 const italianImage = document.getElementById('italian-img');
+const mexicanImage = document.getElementById('mexican-img');
+
 /* State */
 
 /* Events */
 italianDropdown.addEventListener('change', () => {
-    console.log(italianDropdown.value);
     italianImage.src = `assets/Italian-${italianDropdown.value}.png`;
+});
+
+mexicanDropdown.addEventListener('change', () => {
+    mexicanImage.src = `assets/Mexican-${mexicanDropdown.value}.png`;
 });
 
 buttonEl.addEventListener('click', () => {});
